@@ -1,21 +1,19 @@
-# --- Terraform ile ilgili geçici ve hassas dosyalar ---
+# Terraform Çalışma Dizinleri
 .terraform/
+
+# State Dosyaları (Güvenlik için asla yükleme)
 *.tfstate
-*.tfstate.backup
+*.tfstate.*
+terraform.tfstate.backup
 *.tfstate.lock.info
-.terraform.lock.hcl
 
-# --- Hassas Kimlik Bilgileri (ÖNEMLİ) ---
+# Hassas Veriler
+*.tfvars
+*.tfvars.json
 *.json
-*.pem
-*.key
-*.p12
+*.override.tf
+*.override.tf.json
 
-# --- İşletim sistemi ve editör dosyaları ---
+# İşletim Sistemi Kalıntıları
 .DS_Store
 Thumbs.db
-.vscode/
-.idea/
-
-# --- Diğer ---
-*.log
