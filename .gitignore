@@ -1,0 +1,21 @@
+# --- Terraform ile ilgili geçici ve hassas dosyalar ---
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+.terraform.lock.hcl
+
+# --- Hassas Kimlik Bilgileri (ÖNEMLİ) ---
+*.json
+*.pem
+*.key
+*.p12
+
+# --- İşletim sistemi ve editör dosyaları ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Diğer ---
+*.log
